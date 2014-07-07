@@ -1,5 +1,3 @@
 #!/bin/bash
-Inputpath=/media/Downloads/"Process Tv"/
-Outputpath=/media/MyMedia/"Tv Shows"/
-Format="{n}/Season {s}/{n} {sxe} {t}"
-Filebot -rename $Inputpath --db thetvdb --format $Format --output $Outputpath 
+
+Filebot -rename /media/Downloads/Process/Tv/ --db thetvdb --format "{n}/Season {s}/{n} {sxe} {t}" --output /media/MyMedia/"Tv Shows"/ --action move
